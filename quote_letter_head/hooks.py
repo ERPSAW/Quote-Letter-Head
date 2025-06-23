@@ -242,3 +242,8 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+import frappe.utils.pdf
+from .overrides.pdf import custom_get_pdf
+frappe.utils.pdf.get_pdf = custom_get_pdf
