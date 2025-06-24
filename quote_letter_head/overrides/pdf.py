@@ -3,6 +3,7 @@ import io
 import pdfkit
 import re
 import urllib.parse
+from frappe import _
 from bs4 import BeautifulSoup
 from pypdf import PdfReader, PdfWriter
 from frappe.utils import scrub_urls, get_bench_relative_path
